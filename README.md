@@ -23,19 +23,19 @@ Add additional notes about how to deploy this on a live system
 
 ## Authors
 
-* **Billie Thompson** - *Rehab Alsaadoun* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Billie Thompson** - *Rehab Alsaadoun*  
+https://rehabsaadoun.github.io/ 
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
----
 
 ## future plans
 
-*use audio.
-*push the game iTunes Store
+
+*push the game  in iTunes Store.
 
 
 ## Acknowledgments
 
 * Alanoud Alrasheed ❤️
+
 
