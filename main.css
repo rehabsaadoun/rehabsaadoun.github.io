@@ -52,7 +52,7 @@ table{
 display: flex;
 /* flex-basis:  */
 justify-content: flex-end;
-align-items: flex-end
+align-items: flex-end;
 
 }
 
@@ -67,7 +67,7 @@ align-items: flex-end
     width: 10%;
     font-size: 20px;
     right: 50%;
-    background-color:rgb(187, 158, 216)
+    background-color:rgb(169, 157, 180)
 }
 
 

@@ -36,13 +36,17 @@ function checkWin() {
     if 
     
     ($("#1").hasClass("x")&&($("#2").hasClass("x")&&($("#3").hasClass("x")))){
-         swal({
+        var winAudio = new Audio('audio/win.mp3');
+            winAudio.play();
+        swal({
             title: "You Win",
             icon: "images/4.gif" 
          });
     }
      if
      ($("#4").hasClass("x")&&($("#5").hasClass("x")&&($("#6").hasClass("x")))){
+        var winAudio = new Audio('audio/win.mp3');
+        winAudio.play();
         swal({
             title: "You Win",
             icon: "images/4.gif" });
@@ -50,72 +54,96 @@ function checkWin() {
     
      if
      ($("#7").hasClass("x")&&($("#8").hasClass("x")&&($("#9").hasClass("x")))){
+        var winAudio = new Audio('audio/win.mp3');
+        winAudio.play();
         swal({
             title: "You Win",
             icon: "images/4.gif"});
     }
      if
      ($("#1").hasClass("x")&&($("#4").hasClass("x")&&($("#7").hasClass("x")))){
+        var winAudio = new Audio('audio/win.mp3');
+        winAudio.play();
         swal({
             title: "You Win",
             icon: "images/4.gif"});
     }
      if
      ($("#2").hasClass("x")&&($("#5").hasClass("x")&&($("#8").hasClass("x")))){
+        var winAudio = new Audio('audio/win.mp3');
+        winAudio.play();
         swal({
             title: "You Win",
             icon: "images/4.gif"});
     }
      if
      ($("#3").hasClass("x")&&($("#6").hasClass("x")&&($("#9").hasClass("x")))){
+        var winAudio = new Audio('audio/win.mp3');
+        winAudio.play();
         swal({
             title: "You Win",
             icon: "images/4.gif"});
     }
      if
      ($("#3").hasClass("x")&&($("#5").hasClass("x")&&($("#7").hasClass("x")))){
+        var winAudio = new Audio('audio/win.mp3');
+        winAudio.play();
         swal({
             title: "You Win",
             icon: "images/4.gif"});
     }
     if
     ($("#1").hasClass("x")&&($("#5").hasClass("x")&&($("#9").hasClass("x")))){
+        var winAudio = new Audio('audio/win.mp3');
+            winAudio.play();
         swal({
             title: "You Win",
             icon: "images/4.gif"});
     }
      else if
      ($("#1").hasClass("o")&&($("#2").hasClass("o")&&($("#3").hasClass("o")))){
+        var winAudio = new Audio('audio/win.mp3');
+        winAudio.play();
         swal({
             title: "You Win",
             icon: "images/4.gif"});
     }
     if 
     ($("#4").hasClass("o")&&($("#5").hasClass("o")&&($("#6").hasClass("o")))){
+        var winAudio = new Audio('audio/win.mp3');
+            winAudio.play();
         swal({
             title: "You Win",
             icon: "images/4.gif"});
     }
      if
      ($("#7").hasClass("o")&&($("#8").hasClass("o")&&($("#9").hasClass("o")))){
+        var winAudio = new Audio('audio/win.mp3');
+        winAudio.play();
         swal({
             title: "You Win",
             icon: "images/4.gif"});
     }
      if
      ($("#1").hasClass("o")&&($("#4").hasClass("o")&&($("#7").hasClass("o")))){
+        var winAudio = new Audio('audio/win.mp3');
+        winAudio.play();
         swal({
             title: "You Win",
             icon: "images/4.gif"});
     }
      if
      ($("#2").hasClass("o")&&($("#5").hasClass("o")&&($("#8").hasClass("o")))){
+        var winAudio = new Audio('audio/win.mp3');
+        winAudio.play();
         swal({
             title: "You Win",
             icon: "images/4.gif"});
     }
      if
      ($("#3").hasClass("o")&&($("#6").hasClass("o")&&($("#9").hasClass("o")))){
+        var winAudio = new Audio('audio/win.mp3');
+        winAudio.play();
         swal({
             title: "You Win",
             icon: "images/4.gif"});
@@ -123,24 +151,27 @@ function checkWin() {
     
      if
      ($("#3").hasClass("o")&&($("#5").hasClass("o")&&($("#7").hasClass("o")))){
+        var winAudio = new Audio('audio/win.mp3');
+        winAudio.play();
         swal({
             title: "You Win",
             icon: "images/4.gif"});
     }
      if
      ($("#1").hasClass("o")&&($("#5").hasClass("o")&&($("#9").hasClass("o")))){
+        var winAudio = new Audio('audio/win.mp3');
+        winAudio.play();
         swal({
             title: "You Win",
             icon: "images/4.gif"});
     }
      if (moves==9){
-    
+        var no4Audio = new Audio('audio/no4.mp3');
+        no4Audio.play();
     swal({title: "NO One Win",
     icon: "images/3.gif"});
     }
     }
-     
-     
       function RestGame  () {
           location.reload();
       }
