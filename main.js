@@ -4,9 +4,9 @@ var moves =0
 var playerO="images/6.jpg";
 var playerX="images/7.jpg";
 var turn = "x";
+var gameOver = false
 
-
-//fuction to add x and o when click on td
+//function to add x and o when click on td
 $("td").on("click", function(event){
     moves++;
     if (turn == "x"){
@@ -40,15 +40,19 @@ function checkWin() {
         //play audio win
         var winAudio = new Audio('audio/win.mp3');
             winAudio.play();
+gameOver = true
+            
         swal({
             title: "You Win",
             icon: "images/4.gif" 
          });
+
     }
      if
      ($("#4").hasClass("x")&&($("#5").hasClass("x")&&($("#6").hasClass("x")))){
         var winAudio = new Audio('audio/win.mp3');
         winAudio.play();
+gameOver = true
         swal({
             title: "You Win",
             icon: "images/4.gif" });
@@ -58,6 +62,7 @@ function checkWin() {
      ($("#7").hasClass("x")&&($("#8").hasClass("x")&&($("#9").hasClass("x")))){
         var winAudio = new Audio('audio/win.mp3');
         winAudio.play();
+gameOver = true
         swal({
             title: "You Win",
             icon: "images/4.gif"});
@@ -66,6 +71,7 @@ function checkWin() {
      ($("#1").hasClass("x")&&($("#4").hasClass("x")&&($("#7").hasClass("x")))){
         var winAudio = new Audio('audio/win.mp3');
         winAudio.play();
+gameOver = true
         swal({
             title: "You Win",
             icon: "images/4.gif"});
@@ -74,6 +80,7 @@ function checkWin() {
      ($("#2").hasClass("x")&&($("#5").hasClass("x")&&($("#8").hasClass("x")))){
         var winAudio = new Audio('audio/win.mp3');
         winAudio.play();
+gameOver = true
         swal({
             title: "You Win",
             icon: "images/4.gif"});
@@ -82,6 +89,7 @@ function checkWin() {
      ($("#3").hasClass("x")&&($("#6").hasClass("x")&&($("#9").hasClass("x")))){
         var winAudio = new Audio('audio/win.mp3');
         winAudio.play();
+gameOver = true
         swal({
             title: "You Win",
             icon: "images/4.gif"});
@@ -90,6 +98,7 @@ function checkWin() {
      ($("#3").hasClass("x")&&($("#5").hasClass("x")&&($("#7").hasClass("x")))){
         var winAudio = new Audio('audio/win.mp3');
         winAudio.play();
+gameOver = true
         swal({
             title: "You Win",
             icon: "images/4.gif"});
@@ -100,6 +109,7 @@ function checkWin() {
     ($("#1").hasClass("x")&&($("#5").hasClass("x")&&($("#9").hasClass("x")))){
         var winAudio = new Audio('audio/win.mp3');
             winAudio.play();
+gameOver = true
         swal({
             title: "You Win",
             icon: "images/4.gif"});
@@ -108,6 +118,7 @@ function checkWin() {
      ($("#1").hasClass("o")&&($("#2").hasClass("o")&&($("#3").hasClass("o")))){
         var winAudio = new Audio('audio/win.mp3');
         winAudio.play();
+gameOver = true
         swal({
             title: "You Win",
             icon: "images/4.gif"});
@@ -116,6 +127,7 @@ function checkWin() {
     ($("#4").hasClass("o")&&($("#5").hasClass("o")&&($("#6").hasClass("o")))){
         var winAudio = new Audio('audio/win.mp3');
             winAudio.play();
+gameOver = true
         swal({
             title: "You Win",
             icon: "images/4.gif"});
@@ -124,6 +136,7 @@ function checkWin() {
      ($("#7").hasClass("o")&&($("#8").hasClass("o")&&($("#9").hasClass("o")))){
         var winAudio = new Audio('audio/win.mp3');
         winAudio.play();
+gameOver = true
         swal({
             title: "You Win",
             icon: "images/4.gif"});
@@ -132,6 +145,7 @@ function checkWin() {
      ($("#1").hasClass("o")&&($("#4").hasClass("o")&&($("#7").hasClass("o")))){
         var winAudio = new Audio('audio/win.mp3');
         winAudio.play();
+gameOver = true
         swal({
             title: "You Win",
             icon: "images/4.gif"});
@@ -140,6 +154,7 @@ function checkWin() {
      ($("#2").hasClass("o")&&($("#5").hasClass("o")&&($("#8").hasClass("o")))){
         var winAudio = new Audio('audio/win.mp3');
         winAudio.play();
+gameOver = true
         swal({
             title: "You Win",
             icon: "images/4.gif"});
@@ -148,6 +163,7 @@ function checkWin() {
      ($("#3").hasClass("o")&&($("#6").hasClass("o")&&($("#9").hasClass("o")))){
         var winAudio = new Audio('audio/win.mp3');
         winAudio.play();
+gameOver = true
         swal({
             title: "You Win",
             icon: "images/4.gif"});
@@ -157,6 +173,7 @@ function checkWin() {
      ($("#3").hasClass("o")&&($("#5").hasClass("o")&&($("#7").hasClass("o")))){
         var winAudio = new Audio('audio/win.mp3');
         winAudio.play();
+gameOver = true
         swal({
             title: "You Win",
             icon: "images/4.gif"});
@@ -165,13 +182,14 @@ function checkWin() {
      ($("#1").hasClass("o")&&($("#5").hasClass("o")&&($("#9").hasClass("o")))){
         var winAudio = new Audio('audio/win.mp3');
         winAudio.play();
+gameOver = true
         swal({
             title: "You Win",
             icon: "images/4.gif"});
     }
     /// in this case means the x and o are equal
     /// 9 times moves
-     if (moves==9){
+     if (moves==9 && gameOver !== true){
         ///// play audio no one win
         var no4Audio = new Audio('audio/no4.mp3');
         no4Audio.play();
